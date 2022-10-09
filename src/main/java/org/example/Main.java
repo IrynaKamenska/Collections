@@ -1,11 +1,31 @@
 package org.example;
 
 import java.util.LinkedList;
-import java.util.List;
 // tutorial: https://www.worldofitech.com/java-programming-linkedlist/#Example_Create_LinkedList_in_Java
 
 public class Main {
     public static void main(String[] args) {
+        Animal an1 = new Animal("cat");
+        Animal an2 = new Animal("dog");
+        Animal an3 = new Animal("cow");
+
+        AnimalList list = new AnimalList();
+        list.add(an1);
+        list.add(an2);
+        list.add(an3);
+
+        list.show();
+
+        list.addAtStart(new Animal("pet"));
+        list.show();
+
+        list.addAt(1, new Animal("crocodile"));
+        list.show();
+        list.removeByIndex(1);
+        list.show();
+
+
+        /*
 // create linkedlist
         LinkedList<String> animals = new LinkedList<>();
 
@@ -40,20 +60,7 @@ public class Main {
             System.out.print(anim);
             System.out.print(", ");
         }
-
-
-        Animal animal1 = new Animal("cow");
-        Animal animal2 = new Animal("dog");
-        Animal animal3 = new Animal("cat");
-
-
-        AnimalListItem listItem1 = new AnimalListItem(animal1);
-        AnimalListItem listItem2 = new AnimalListItem(animal2);
-        AnimalListItem listItem3 = new AnimalListItem(animal3);
-
-        AnimalList list = new AnimalList();
-        list.add(animal1);
-
+*/
 
 
     }

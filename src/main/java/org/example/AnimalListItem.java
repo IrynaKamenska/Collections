@@ -1,21 +1,23 @@
 package org.example;
 
 public class AnimalListItem {
-    private Animal value;
-    protected AnimalListItem next;
+     Animal value;
+     AnimalListItem next;
 
-    public AnimalListItem(Animal value) {
-        this.value = value;
-    }
+     public Animal getValue() {
+          return value;
+     }
 
-    private AnimalListItem head;
+     public void setValue(Animal value) {
+          this.value = value;
+     }
 
+     public AnimalListItem getNext() {
+          return next;
+     }
 
-
-
-
-
-
-
+     public void setNext(AnimalListItem next) {
+          this.next = next;
+     }
 }
 
