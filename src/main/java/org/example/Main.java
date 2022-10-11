@@ -5,6 +5,12 @@ import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
+        // example record
+        Cat cat1 = new Cat("aok", 8);
+        System.out.println(cat1.name());
+        System.out.println(cat1.age());
+
+
         Animal an1 = new Animal("cat");
         Animal an2 = new Animal("dog");
         Animal an3 = new Animal("cow");
